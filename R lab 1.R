@@ -2,8 +2,8 @@
  date()
  1+5
  1/(2+3) == 5
- 1:3 #вектор
-  as.matrix(1:3) #матрица
+ 1:3 #ГўГҐГЄГІГ®Г°
+  as.matrix(1:3) #Г¬Г ГІГ°ГЁГ¶Г 
  seq(from = 1, to = 3, by = .5)
  order(1:3, decreasing = TRUE)
  rev(1:3)
@@ -13,8 +13,8 @@
  list(i, j)
  j
  i[order(i)]
- x <- "привет"
- y <- "мир"
+ x <- "ГЇГ°ГЁГўГҐГІ"
+ y <- "Г¬ГЁГ°"
  z <- c(x,y)
  x
  y
@@ -63,11 +63,11 @@
  o <- c(10,20)
  o
  m %*% o
- rownames(f) <- c("трудодни", "сталь")
- rownames(f) <- c("трудодни" , "сталь")
- colnames(f) <- c("автомобили" , "грузовики")
- rownames(f)<- c("трудодни" , "сталь")
- rownames(f)<-c("трудодни" , "сталь")
+ rownames(f) <- c("ГІГ°ГіГ¤Г®Г¤Г­ГЁ", "Г±ГІГ Г«Гј")
+ rownames(f) <- c("ГІГ°ГіГ¤Г®Г¤Г­ГЁ" , "Г±ГІГ Г«Гј")
+ colnames(f) <- c("Г ГўГІГ®Г¬Г®ГЎГЁГ«ГЁ" , "ГЈГ°ГіГ§Г®ГўГЁГЄГЁ")
+ rownames(f)<- c("ГІГ°ГіГ¤Г®Г¤Г­ГЁ" , "Г±ГІГ Г«Гј")
+ rownames(f)<-c("ГІГ°ГіГ¤Г®Г¤Г­ГЁ" , "Г±ГІГ Г«Гј")
  library(class)
  library(Matrix)
  library(boot)
@@ -87,15 +87,15 @@
  library(tcltk)
  library(tools)
  library(translations)
- rownames(f) <- c("трудодни", "сталь")
- rownames(m) <- c("трудодни", "сталь")
- rownames(m) <- c("трудодни", "сталь")
- colnames(m) <- c("автомобили" , "грузовики")
+ rownames(f) <- c("ГІГ°ГіГ¤Г®Г¤Г­ГЁ", "Г±ГІГ Г«Гј")
+ rownames(m) <- c("ГІГ°ГіГ¤Г®Г¤Г­ГЁ", "Г±ГІГ Г«Гј")
+ rownames(m) <- c("ГІГ°ГіГ¤Г®Г¤Г­ГЁ", "Г±ГІГ Г«Гј")
+ colnames(m) <- c("Г ГўГІГ®Г¬Г®ГЎГЁГ«ГЁ" , "ГЈГ°ГіГ§Г®ГўГЁГЄГЁ")
  m
  output <- c(20,10)
- names(output) <- c("грузовики" , "автомобили")
+ names(output) <- c("ГЈГ°ГіГ§Г®ГўГЁГЄГЁ" , "Г ГўГІГ®Г¬Г®ГЎГЁГ«ГЁ")
  available <- c(1600,70)
- names(available) <- c("трудодник" , "сталь")
+ names(available) <- c("ГІГ°ГіГ¤Г®Г¤Г­ГЁГЄ" , "Г±ГІГ Г«Гј")
  m %*% output[colnames(m)]
  apply(m, 1, mean)
  m
